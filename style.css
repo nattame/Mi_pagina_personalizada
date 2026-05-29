@@ -45,42 +45,274 @@
 }
 
 
-.contenedor{
+
+nav{
+
+     border: black solid 5px;
+     font-size: 50px;
+   
+     background-color:cadetblue;
+     display: flex;
+     flex-direction:row;
+     align-items: stretch;
+     justify-content: space-evenly;
+}
+
+nav img{
+
+     
+     width: 100%;
+     height: 210%;
+}
+nav a{
+text-decoration: none;
+   
+
+}
+
+nav p{
+
+     color: rgb(255, 176, 28);
+     font-size: 50%;
+     white-space: nowrap;
+     position: absolute;
+     padding-top: 30px;
+     padding:40px;
+
+     font-weight: 900;
+     transition: transform ease-in-out 2s;
+}
+
+nav p:hover{
+
+     transform: translateY(30px);
+}
+.habilidiv p{
+
+    
+
+
+}
+
+.introdiv p{
+     
+}
+.magiadiv p{
+}
+
+.sobrediv p{
+
+}
+
+.jefesdiv p{
+
+}
+
+.contactdiv p{
+}
+
+nav div{
+     height: 100px;
+     width: 100%;
+     border: black solid 5px;
+     order: 1;
+     overflow: hidden;
+     
+     
+     transition: transform 0.5s;
+     
+     
+}
+
+.introdiv img{
+     height: 150%;
+     width: 100%;
+}
+
+.habilidiv img{
+
+     height: 170%;
+     width: 150%;
+     
+}
+
+.magiadiv img{
+     height: 150% ;
+     width: 100%;
+}
+
+nav div:hover{
+     transform: scale(1.3);
+}
+
+*{
+     margin: 0;
+     padding: 0;
+}
+
+
+
+
+
+main{
+      background: repeating-radial-gradient(#000 ,var(--espectral) 50px,#000 );
+  
+
+}
+
+.sobre{
      
      display: grid;
-     grid-template-areas: "aside main";
+     grid-template-areas: 
+     "sobre1 sobre2";
      background-color: #04251e;
      color: var(--espectral);
      grid-template-columns:1fr 2fr;
      grid-template-rows: auto;
      
-     border: solid black 50px;
+     border: solid black 10px;
      font-size: 20px;
-
-
-
-
-
-}
-
-main{
-     padding: 40px;
-     grid-area: main;
-     width:50px;
-}
-aside{
-     grid-area:aside;
-     border: 9px solid black;
-     font-family: 'Times New Roman', Times, serif;
-     font-size: 30px;
      font-family: Caudex,serif;
+    
+
+
+
+
+}
+.sobre1{ 
+     grid-area:sobre1;
+     padding: 30px;
+    
+     font-size: 30px;
+   
      font-weight: 800;
 
 }
 
+.sobre2{
+     font-size: 40px;
+     padding: 40px;
+     grid-area: sobre2;
+     width:50%;
+    
+}
+.sobre2 img{
+     width: 700px;
+     height: 700px;
+}
 
 
 
+.introduccion{
+     display: grid;
+      grid-template-areas: 
+     "intro1 intro2"
+     "personajes personajes";
+     background-color: #04251e;
+     color: var(--espectral);
+     grid-template-columns:1fr 1fr;
+
+     border: solid black 10px;
+     font-size: 20px;
+     font-family: Caudex,serif;
+    
+}
+
+
+.intro1{
+     grid-area: intro1;
+     font-family: Caudex, serif;
+   
+     margin-left: 10px;
+     font-size: 40px;
+}
+
+.intro2{
+     grid-area: intro2;
+}
+
+.personajes{
+     margin-top: 30px;
+     grid-area: personajes;
+}
+
+
+.lista ol{
+
+     font-size: 30px;
+
+     display: flex;
+     flex-direction: row;
+     gap: 30px;
+     list-style: none;
+     flex-wrap: wrap;
+
+     
+    
+     
+}
+.lista li{
+     color: white;
+     text-align: center;
+     
+     
+}
+
+.lista div{
+     margin: 20px;
+     padding: 20px;
+     filter: blur(2px);
+     background-position: center;
+     background-size: 100%;
+     transition:filter 0.3s ease-in, transform 0.3s ease-in-out;
+     height: 100px;
+     width: 200px;
+
+}
+
+.raziel{
+
+     background-image: url(assets/legacy.webp);
+ 
+     
+}
+.kain{
+     background-image: url(assets/kain.webp);
+
+
+     
+}
+.zephon{
+     background-image: url(assets/zephon.webp);
+
+}
+
+.moebius{
+     background-image: url(assets/moebius.webp);
+}
+
+.rahab{
+     background-image: url(assets/rahab.jpg);
+}
+
+.dumah{
+     background-image: url(assets/dumah.webp);
+}
+
+.turel{
+     background-image: url(assets/turel.webp);
+}
+
+.melchiah{
+     background-image: url(assets/melchia.webp);
+}
+
+
+
+.lista div:hover{
+     filter: blur(0px);
+     transform: scale(1.5);
+}
 
 main{
      
@@ -92,7 +324,7 @@ footer{
      height:4%;
      font-size: 20px;
      background-color: black ;
-     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-family: 'Times New Roman', Times, serif;
      color: beige;
      position: fixed;
      bottom: 0px;
@@ -119,27 +351,4 @@ body{
 }
 
 
-nav{
-     padding: 30px;
-     font-size: 50px;
-     justify-content: space-between;
-     background-color:cadetblue;
-     display: flex;
-}
-
-
-
-nav a{
-     border-radius: 5px;
-     padding: 10px;
-     text-decoration: none;
-     position: relative;
-     
-     
-}
-
-*{
-     margin: 0;
-     padding: 0;
-}
 
