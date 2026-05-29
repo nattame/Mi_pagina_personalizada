@@ -1,7 +1,41 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caudex:ital,wght@0,400;0,700;1,400;1,700&family=Felipa&display=swap');
+
+
+
+.caudex-regular {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.caudex-bold {
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.caudex-regular-italic {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.caudex-bold-italic {
+  font-family: "Caudex", serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+
 :root {
      --espectral: #009977;
      --ten:10px;
 }
+
+
 
 
 .felipa-regular {
@@ -13,20 +47,45 @@
 
 .contenedor{
      
-     display:flex;
-     flex-direction:column;
-     flex-wrap: wrap;
+     display: grid;
+     grid-template-areas: "aside main";
      background-color: #04251e;
      color: var(--espectral);
-     padding: 50px;
+     grid-template-columns:1fr 2fr;
+     grid-template-rows: auto;
+     
+     border: solid black 50px;
      font-size: 20px;
+
+
+
+
+
 }
 
 main{
-     width: 50%;
-     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-     padding: 50px;
+     padding: 40px;
+     grid-area: main;
+     width:50px;
 }
+aside{
+     grid-area:aside;
+     border: 9px solid black;
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 30px;
+     font-family: Caudex,serif;
+     font-weight: 800;
+
+}
+
+
+
+
+
+main{
+     
+}
+
 
 footer{
      width: 100%;
@@ -35,7 +94,7 @@ footer{
      background-color: black ;
      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
      color: beige;
-     position: absolute;
+     position: fixed;
      bottom: 0px;
      text-align: center;
 }
@@ -83,5 +142,4 @@ nav a{
      margin: 0;
      padding: 0;
 }
-
 
