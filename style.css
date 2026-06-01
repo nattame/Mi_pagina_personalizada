@@ -164,10 +164,10 @@ main{
      
      display: grid;
      grid-template-areas: 
-     "sobre1 sobre2";
+     "sobre1 sobre2 sobre3";
      background-color: #04251e;
      color: var(--espectral);
-     grid-template-columns:1fr 2fr;
+     grid-template-columns:1fr 1fr 1fr;
      grid-template-rows: auto;
      
      border: solid black 10px;
@@ -190,15 +190,23 @@ main{
 }
 
 .sobre2{
-     font-size: 40px;
-     padding: 40px;
+     
+     padding: 30px;
      grid-area: sobre2;
      width:50%;
     
 }
 .sobre2 img{
-     width: 700px;
-     height: 700px;
+     width: 500px;
+     height: 500px;
+}
+.sobre3{
+     grid-area: sobre3;
+     margin: 30px;
+}
+.sobre3 img{
+     width: 400px;
+     height: 500px;
 }
 
 
@@ -223,12 +231,13 @@ main{
      grid-area: intro1;
      font-family: Caudex, serif;
    
-     margin-left: 10px;
+     margin-left: 20px;
      font-size: 40px;
 }
 
 .intro2{
      grid-area: intro2;
+      margin-left: 20px;
 }
 
 .personajes{
@@ -261,18 +270,20 @@ main{
 .lista div{
      margin: 20px;
      padding: 20px;
-     filter: blur(2px);
+     /* filter: blur(2px); */
      background-position: center;
-     background-size: 100%;
+     background-size: 130%;
      transition:filter 0.3s ease-in, transform 0.3s ease-in-out;
-     height: 100px;
-     width: 200px;
+     height: 200px;
+     width: 300px;
 
 }
 
+
+
 .raziel{
 
-     background-image: url(assets/legacy.webp);
+     background-image: url(assets/razil.png);
  
      
 }
@@ -309,9 +320,32 @@ main{
 
 
 
+
+
 .lista div:hover{
      filter: blur(0px);
      transform: scale(1.5);
+}
+
+
+.habilidadesdiv {
+     color:var(--espectral)
+
+
+}
+.habilidadesdiv img{
+     width: 200px;
+     height: 200px;
+}
+
+.sectionjefesdiv{
+     color: var(--espectral);
+     
+}
+
+.sectionjefesdiv img{
+     width: 320px;
+     height: 280px;
 }
 
 main{
