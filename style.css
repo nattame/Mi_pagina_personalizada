@@ -32,16 +32,40 @@
 
 :root {
      --espectral: #009977;
+     --backespectral: #04251e;
      --ten:10px;
 }
 
+*{
+     margin: 0;
+     padding: 0;
+}
 
+
+h2{
+     margin: 30px;
+     font-size: 50px;
+}
+h3{
+     margin-bottom: 20px;
+     font-size: 25px ;
+}
+
+body{
+     background-color: rgb(2, 32, 18);
+     margin-left: 40px;
+     margin-right: 40px;
+     
+}
+body section{
+     border: 10px black solid;
+}
 
 header{
      
      background-image:url(assets/soulrever.jpg) ;
      position: relative;
-     background-color: blue;
+     background-color: black;
      text-align: center;
      
      
@@ -50,13 +74,6 @@ header img{
      width: 20%;
      height:20%;
 }
-
-body{
-     background-color: #013a2d;
-     
-}
-
-
 
 
 
@@ -111,29 +128,7 @@ nav p:hover{
 
      transform: translateY(30px);
 }
-.habilidiv p{
 
-    
-
-
-}
-
-.introdiv p{
-     
-}
-.magiadiv p{
-}
-
-.sobrediv p{
-
-}
-
-.jefesdiv p{
-
-}
-
-.contactdiv p{
-}
 
 nav div{
      height: 100px;
@@ -169,27 +164,15 @@ nav div:hover{
      transform: scale(1.3);
 }
 
-*{
-     margin: 0;
-     padding: 0;
-}
 
 
 
-
-
-main{
-     /* background: repeating-radial-gradient(#000 ,var(--espectral) 50px,#000 );
-  */
-
-}
-
-.sobre{
+#sobre{
      
      display: grid;
      grid-template-areas: 
      "sobre1 sobre2 sobre3";
-     background-color: #04251e;
+     background-color: var(--backespectral);
      color: var(--espectral);
      grid-template-columns:1fr 1fr 1fr;
      grid-template-rows: auto;
@@ -235,12 +218,15 @@ main{
 
 
 
-.introduccion{
+
+
+
+#introduccion{
      display: grid;
       grid-template-areas: 
      "intro1 intro2"
      "personajes personajes";
-     background-color: #04251e;
+     background-color: var(--backespectral);
      color: var(--espectral);
      grid-template-columns:1fr 1fr;
 
@@ -261,12 +247,31 @@ main{
 
 .intro2{
      grid-area: intro2;
-      margin-left: 20px;
+     margin-top: 20px;
+     margin-left: 20px;
+     font-size: 25px;
 }
 
 .personajes{
-     margin-top: 30px;
+     margin: 40px;
      grid-area: personajes;
+     
+}
+.personajes p{
+     margin: 10px;
+        font-size: 25px;
+}
+.personajes a{
+     color: black;
+     text-decoration: none;
+     background-color: var(--espectral);
+     border-radius: 7px;
+     padding: 20px;
+     transition: color 0.5s ease-in;
+}
+.personajes a:hover{
+     color: white;
+     cursor: pointer;
 }
 
 
@@ -284,12 +289,7 @@ main{
     
      
 }
-.lista li{
-     color: white;
-     text-align: center;
-     
-     
-}
+
 
 .lista div{
      margin: 20px;
@@ -300,44 +300,39 @@ main{
      transition:filter 0.3s ease-in, transform 0.3s ease-in-out;
      height: 200px;
      width: 300px;
+     text-align: right;
+     
 
+}
+
+.lista div:hover{
+     filter: blur(0px);
+     transform: scale(1.5);
 }
 
 
 
 .raziel{
-
      background-image: url(assets/razil.png);
- 
-     
 }
 .kain{
      background-image: url(assets/kain.webp);
-
-
-     
 }
 .zephon{
      background-image: url(assets/zephon.webp);
-
 }
-
 .moebius{
      background-image: url(assets/moebius.webp);
 }
-
 .rahab{
      background-image: url(assets/rahab.jpg);
 }
-
 .dumah{
      background-image: url(assets/dumah.webp);
 }
-
 .turel{
      background-image: url(assets/turel.webp);
 }
-
 .melchiah{
      background-image: url(assets/melchia.webp);
 }
@@ -346,28 +341,16 @@ main{
 
 
 
-.lista div:hover{
-     filter: blur(0px);
-     transform: scale(1.5);
-}
-
-
-.habilidadesdiv {
-     color:var(--espectral);
-
-}
-
 
 #habilidades{
-
-background-color:#04251e;
+     
+     background-color:var(--backespectral);
 
 }
-
 
 .habilidadesdiv{
 
-     
+     color:var(--espectral);
      display:flex;
      flex-direction: row;
      flex-wrap: wrap;
@@ -375,24 +358,16 @@ background-color:#04251e;
      justify-content: space-evenly;
      
      text-align: center;
-     margin: 100px;
      
      
      
-}
-.habilidadesdiv div{
-     
-
 }
 
 .habilidadesdiv h3{
      margin-top: 100px;
      text-align: center;
+     font-size: 40px;
 }
-
-
-
-
 
 .habilidadesdiv img{
      margin-top: 90px;
@@ -401,22 +376,27 @@ background-color:#04251e;
      border: 10px solid black;
 }
 
+
+
+#jefes{
+     background-color:var(--backespectral);
+}
 .sectionjefesdiv{
      color: var(--espectral);
-     background-color: #04251e;
-     margin: 50px;
+     background-color:var(--backespectral);
      text-align: center;
      
 }
 
 .sectionjefesdiv p{
-     margin-top: 20px;
-     font-size: 20px;
+     font-size: 30px;
+     margin: 30px;
+
 }
 .sectionjefesdiv li{
-     margin-top: 20px;
+     margin-top: 30px;
      text-align: center;
-     font-size: 30px;
+     font-size: 40px;
      list-style: none;
 }
 
@@ -426,9 +406,49 @@ background-color:#04251e;
      border: 10px solid black;
 }
 
-main{
+
+
+#magia{
+     background-color: var(--backespectral);
+     color: var(--espectral);
+     text-align: center;
+     margin-top: 50px;
      
 }
+
+table{
+     width: 1200px;
+     text-align: center;
+     margin: auto;
+     font-size: 25px;
+     
+}
+
+
+table,th,td{
+     border: black 10px solid;
+     border-collapse: collapse;
+}
+
+
+
+#contacto{
+     background-color: var(--backespectral);
+     color:var(--espectral);
+     font-size: 25px;
+     text-align: center;
+}
+label{
+     margin: 10px;
+}
+input,textarea{
+     margin: 10px;
+     background-color: black ;
+     color: white;
+     border: black solid 6px;
+}
+
+
 
 
 footer{
@@ -445,3 +465,268 @@ footer{
 
 
 
+@media screen and (max-width:768px){
+     #sobre{
+     
+     display: grid;
+     grid-template-areas: 
+     "sobre1" 
+     "sobre2"
+      "sobre3";
+     background-color: var(--backespectral);
+     color: var(--espectral);
+     grid-template-rows: auto;
+     
+     border: solid black 10px;
+     font-size: 20px;
+     font-family: Caudex,serif;
+    
+}
+
+#introduccion{
+     display: grid;
+      grid-template-areas: 
+     "intro1"
+      "intro2"
+     "personajes"
+      "personajes";
+     background-color: var(--backespectral);
+     color: var(--espectral);
+     grid-template-rows:auto;
+
+     font-size: 20px;
+     font-family: Caudex,serif;
+     
+    
+}
+video{
+     width: 400px;
+     height: 400px;
+}
+table{
+     width: 400px;
+     text-align: center;
+     margin: auto;
+     font-size: 25px;
+     
+}
+.sobre2 img{
+     width: 440px;
+}
+iframe{
+     width: 400px;
+     height: 300px;
+}
+
+nav{
+
+     width: 90%;
+     font-size: 50px;
+     margin: auto;
+     background-color:cadetblue;
+     display: flex;
+     flex-direction:column;
+     align-content: center;
+     justify-content: space-evenly;
+     position: relative;
+
+}
+
+nav div{
+     height: 180px;
+     width: 100%;
+
+     order: 1;
+     overflow: hidden;
+     
+     
+     transition: transform 0.5s;
+     
+     
+}
+
+nav p{
+
+     color: rgb(255, 176, 28);
+     font-size: 50%;
+     white-space: nowrap;
+     position: absolute;
+     
+     font-weight: 900;
+     transition: transform ease-in-out 2s;
+}
+
+
+}
+
+
+@media screen and (max-width:480px){
+     #sobre{
+     
+     display: grid;
+     grid-template-areas: 
+     "sobre1" 
+     "sobre2"
+      "sobre3";
+     background-color: var(--backespectral);
+     color: var(--espectral);
+     grid-template-rows: auto;
+     
+     border: solid black 10px;
+     font-size: 20px;
+     font-family: Caudex,serif;
+    
+}
+
+#introduccion{
+     display: grid;
+      grid-template-areas: 
+     "intro1"
+      "intro2"
+     "personajes"
+      "personajes";
+     background-color: var(--backespectral);
+     color: var(--espectral);
+     grid-template-rows:auto;
+
+     font-size: 10px;
+     font-family: Caudex,serif;
+     
+    
+}
+video{
+     width: 300px;
+     height: 300px;
+}
+table{
+     width: 300px;
+     text-align: center;
+     margin: auto;
+     font-size: 20px;
+     
+}
+.sobre2 img{
+     width: 300px;
+     height: 300px;
+}
+.sobre3 img{
+     width: 300px;
+     height: 400px;
+}
+iframe{
+     width: 400px;
+     height: 300px;
+}
+
+nav{
+
+     width: 90%;
+     font-size: 50px;
+     margin: auto;
+     background-color:cadetblue;
+     display: flex;
+     flex-direction:column;
+     align-content: center;
+     justify-content: space-evenly;
+     position: relative;
+
+}
+
+nav div{
+     height: 180px;
+     width: 100%;
+
+     order: 1;
+     overflow: hidden;
+     
+     
+     transition: transform 0.5s;
+     
+     
+}
+
+nav p{
+
+     color: rgb(255, 176, 28);
+     font-size: 50%;
+     white-space: nowrap;
+     position: absolute;
+     
+     font-weight: 900;
+     transition: transform ease-in-out 2s;
+}
+.intro1 p{
+     
+     font-size: 20px;
+     width: 70%;
+     
+}
+
+
+.personajes{
+     margin: 20px;
+     grid-area: personajes;
+     
+}
+.personajes p{
+     margin: 10px;
+        font-size: 25px;
+}
+.personajes a{
+     color: black;
+     text-decoration: none;
+     background-color: var(--espectral);
+     border-radius: 7px;
+     padding: 20px;
+     transition: color 0.5s ease-in;
+}
+.personajes a:hover{
+     color: white;
+     cursor: pointer;
+}
+
+
+.lista ol{
+
+     font-size: 30px;
+
+     display: flex;
+     flex-direction: row;
+     gap: 30px;
+     list-style: none;
+     flex-wrap: wrap;
+
+     
+    
+     
+}
+
+
+.lista div{
+     margin: 20px;
+     padding: 20px;
+     /* filter: blur(2px); */
+     background-position: center;
+     background-size: 130%;
+     transition:filter 0.3s ease-in, transform 0.3s ease-in-out;
+     height: 200px;
+     width: 280px;
+     text-align: right;
+     
+
+}
+
+.lista div:hover{
+     filter: blur(0px);
+     transform: scale(1.5);
+}
+
+h3{
+     font-size: 20px;
+}
+iframe{
+     width: 300px;
+     height: 300px;
+}
+
+}
