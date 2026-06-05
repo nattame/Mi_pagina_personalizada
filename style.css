@@ -37,6 +37,29 @@
 
 
 
+header{
+     
+     background-image:url(assets/soulrever.jpg) ;
+     position: relative;
+     background-color: blue;
+     text-align: center;
+     
+     
+}
+header img{
+     width: 20%;
+     height:20%;
+}
+
+body{
+     background-color: #013a2d;
+     
+}
+
+
+
+
+
 
 .felipa-regular {
   font-family: "Felipa", serif;
@@ -56,6 +79,8 @@ nav{
      flex-direction:row;
      align-items: stretch;
      justify-content: space-evenly;
+     position: relative;
+
 }
 
 nav img{
@@ -78,7 +103,6 @@ nav p{
      position: absolute;
      padding-top: 30px;
      padding:40px;
-
      font-weight: 900;
      transition: transform ease-in-out 2s;
 }
@@ -155,8 +179,8 @@ nav div:hover{
 
 
 main{
-      background: repeating-radial-gradient(#000 ,var(--espectral) 50px,#000 );
-  
+     /* background: repeating-radial-gradient(#000 ,var(--espectral) 50px,#000 );
+  */
 
 }
 
@@ -329,23 +353,77 @@ main{
 
 
 .habilidadesdiv {
-     color:var(--espectral)
-
+     color:var(--espectral);
 
 }
+
+
+#habilidades{
+
+background-color:#04251e;
+
+}
+
+
+.habilidadesdiv{
+
+     
+     display:flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     font-size: 30px;
+     justify-content: space-evenly;
+     
+     text-align: center;
+     margin: 100px;
+     
+     
+     
+}
+.habilidadesdiv div{
+     
+
+}
+
+.habilidadesdiv h3{
+     margin-top: 100px;
+     text-align: center;
+}
+
+
+
+
+
 .habilidadesdiv img{
-     width: 200px;
-     height: 200px;
+     margin-top: 90px;
+     width: 300px;
+     height: 300px;
+     border: 10px solid black;
 }
 
 .sectionjefesdiv{
      color: var(--espectral);
+     background-color: #04251e;
+     margin: 50px;
+     text-align: center;
      
+}
+
+.sectionjefesdiv p{
+     margin-top: 20px;
+     font-size: 20px;
+}
+.sectionjefesdiv li{
+     margin-top: 20px;
+     text-align: center;
+     font-size: 30px;
+     list-style: none;
 }
 
 .sectionjefesdiv img{
      width: 320px;
      height: 280px;
+     border: 10px solid black;
 }
 
 main{
@@ -360,28 +438,9 @@ footer{
      background-color: black ;
      font-family: 'Times New Roman', Times, serif;
      color: beige;
-     position: fixed;
+     
      bottom: 0px;
      text-align: center;
-}
-
-
-header{
-     
-     background-image:url(assets/soulrever.jpg) ;
-     
-     background-color: blue;
-     text-align: center;
-     
-     
-}
-header img{
-     width: 20%;
-     height:20%;
-}
-
-body{
-     background-color: #009977;
 }
 
 
