@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Felipa&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
 </head>
 <body id="inicio">
    
@@ -19,12 +20,12 @@
 
             <nav>
         
-                   <div class="sobrediv"> <a href="#sobre"><p>SOBRE</p><img src="assets/sobre.jpg" alt=""></a></div>
-                    <div class="introdiv"><a href="#introduccion"><p>INTRODUCCION</p><img src="assets/introsoul.jpg" alt=""></a></div>
-                   <div class="habilidiv"> <a href="#habilidades"><p>HABILIDADES</p><img src="assets/razielshooting.jpg" alt=""></a></div>
-                   <div class="jefesdiv"> <a href="#jefes"><p>JEFES</p><img src="assets/soulreaver.webp" alt=""></a></div>
-                   <div class="magiadiv"> <a href="#magia"><p>MAGIA</p><img src="assets/stoneglyph.webp" alt=""></a></div>
-                   <div class="contactdiv"> <a href="#contacto"><p>CONTACTO</p><img src="assets/ElderGod_1.jpg" alt=""></a></div>
+                   <div class="sobrediv"> <a href="#sobre"><p>SOBRE</p></a></div>
+                    <div class="introdiv"><a href="#introduccion"><p>INTRODUCCION</p></a></div>
+                   <div class="habilidiv"> <a href="#habilidades"><p>HABILIDADES</p></a></div>
+                   <div class="jefesdiv"> <a href="#jefes"><p>JEFES</p></a></div>
+                   <div class="magiadiv"> <a href="#magia"><p>MAGIA</p></a></div>
+                   <div class="contactdiv"> <a href="#contacto"><p>CONTACTO</p></a></div>
                  
             </nav>
         
@@ -42,7 +43,7 @@
                     <br>
             
                     
-            </div> 
+                </div> 
             
             <!-- No puedo hacer iframe por copyright
              <iframe width="1335" height="751" src="https://www.youtube.com/embed/gsrOQnv4FTg" title="Legacy of Kain Soul Reaver 1 Remastered Intro En Español" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
@@ -52,14 +53,16 @@
                
                <div class="sobre2">
                     <h3>Foto de la portada del juego:</h3>
-                   <img src="assets/legacy.webp" alt="">
+                   <img id="foto1" src="assets/legacy.webp" alt="">
                 </div>
-
+                  
 
                 <div class="sobre3">
                     <h3> Foto de la portada (concepto inicial):</h3>
                     <img src="assets/Shifter11.webp" alt="">
                 </div>
+                <br>
+
             </section>
 
 
@@ -88,23 +91,27 @@
              <iframe width="1335" height="751" src="https://www.youtube.com/embed/gsrOQnv4FTg" title="Legacy of Kain Soul Reaver 1 Remastered Intro En Español" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
              
              <div class="personajes">
+              
              
              <h2>Personajes</h2>
-            
+             
              <p>Esta es una lista de los personajes por el orden que aparecen dentro del juego.</p>
             <div class="lista">
                 <ol>
-                    <li><div class="raziel"><p><b>Raziel</b></p></div></li>
-                    <li><div class="kain"><p><b>Kain</b></div></p></li>
-                    <li><div class="melchiah"><p><b>Melchiah</b></p></div></li>
-                    <li><div class="zephon"><p><b>Zephon</b></p></div></li>
-                    <li><div class="rahab"><p><b>Rahab</b></p></div></li>
-                    <li><div class="dumah"><p><b>Dumah</b></p></div></li>
-                    <li><div class="moebius"><p><b>Moebius</b></p></div></li>
-                    <li><div class="turel"><p><b>Turel</b></div></p></li>
+                    <li><div id="raziel"></div></li>
+                    <li><div id="kain"></div></li>
+                    <li><div id="melchiah"></div></li>
+                    <li><div id="zephon"></div></li>
+                    <li><div id="rahab"></div></li>
+                    <li><div id="dumah"></div></li>
+                    <li><div id="moebius"></div></li>
+                    <li><div id="turel"></div></li>
             
                 
                 </ol>
+                <br>
+             <button id="personajebtn" >IAZQASAS</button>
+             <br>
             </div>    
             <br>
 
@@ -115,51 +122,56 @@
                 <a href="https://legadodekain.net/soul-reaver/">GUION COMPLETO</a>
             </div>
 
-        </section>
+            </section>
 
         <br><br>
         <section id="habilidades">
+                
             <div class="habilidadesdiv">
+            
             <h2>Habilidades</h2>
+            
             
             <p>Esta seccion es para demostrar las habilidades especiales que tiene Raziel(el personaje que controlamos) y las que conseguiras mientras avanza el juego</p>
 
-            
-                <div class="diving">
+    
+
+
+                <div id="diving">
             <h3><i>Gliding</i></h3>
             <p>Presiona <b>Saltar</b> , y presiona <b>Saltar</b>  otra vez en el aire para deslizarse por el aire.</p>
             
                 <img src="assets/stand1.png"> <img src="assets/glide2.png"> <img src="assets/stand2.png">
                     </div>
-                     <div class="shift">
+                     <div id="shift">
             <h3><i>Cambio de mundo</i></h3>
             <p>Presiona <b>Menu Secundario</b> , y presiona <b>Accion</b>  mientras el icono de cambio este seleccionado y accesible. Esto cambia el mundo espectral al material y viceversa. Cabe destacar que se necesita un portal y la barra de vida llena para cambiar de espectral al material.</p>
             
                  <img src="assets/portal1.png"> <img src="assets/portal2.png"> <img src="assets/portal3.png">
                          
                     </div>
-                     <div class="phasing">
+                     <div id="phasing">
             <h3><i>Atravezar</i></h3>
             <p>En el mundo espectral, camina hacia una reja, mientras estes bien alineado, la atravesaras.</p>
 
              <img src="assets/phase1.png"> <img src="assets/phase2.png"> <img src="assets/phase3.png"> <img src="assets/phase4.png">
             
              </div>
-              <div class="climbing">
+              <div id="climbing">
             <h3><i>Escalar</i></h3>
             <p>Una vez visto la pared para escalar, salta hacia esta, y automaticamente escalaras.</p>
 
              <img src="assets/escalar1.png"> <img src="assets/escalar2.png"> <img src="assets/escalar3.png"> 
             
              </div>
-              <div class="shooting">
+              <div id="shooting">
             <h3><i>Telekinesis</i></h3>            
             <p>Presiona el boton de <b>Disparar</b>  para soltar una bola de telekinesis. Manten el boton de <b>Camara</b>  para apuntar.</p>
             
              <img src="assets/disparar1.png"> <img src="assets/disparar2.png"> <img src="assets/disparar3.png"> 
                
              </div>
-              <div class="swimming">
+              <div id="swimming">
             <h3><i>Nadar</i></h3>            
             <p>Una vez dentro el agua, manten presionado <b>Saltar</b> para ir adelante. Manten el boton de <b>Agachado</b> y entonces aprieta <b>Saltar</b> para un impulso, esto ayuda a saltar hacia la superficie del agua.</p>
 
@@ -167,7 +179,7 @@
             
             
                   </div>
-                   <div class="constricting">
+                   <div id="constricting">
 
             <h3><i>Constriccion</i></h3>            
             <p>Corre en un circulo para activar trampas o mecanismos dentro del trazo que hiciste.</p>
@@ -176,6 +188,8 @@
 
         </div>
             </div>
+            <br>
+            
         </section>
         <br>
         <br>
@@ -183,41 +197,49 @@
          <section id="jefes">
             <div class="sectionjefesdiv">
                 <h2>Jefes</h2>
+
+                <br>
             
                 <h3>Esta seccion se dedica a los jefes del juego, y el truco para derrotarlos.</h3>
 
             <ol>
+                <div id="melchiahboss">
                 <li><b>Melchiah</b></li>
                 <p>Una vez empezada la pelea, ve hacia las paredes, cuando veas una palanca dentro de las habitaciones con rejas, fijate en el lado de la entrada habra un agujero en un piso elevado, entra a la habitacion, y presiona Accion en la palanca. Raziel tirara de esta y abrira la reja, espera a que Melchiah pase por debajo de estas y soltaras el boton para que caigan las rejas encima de este. Repite este proceso en otra habitacion con palanca que se muestre la escena de una palanca polea girando, tienes que ir a ese lugar y presionar Accion cerca de ella para activar el mecanismo.</p>
                 
                  <img src="assets/melchiah1.png"> <img src="assets/melchiah2.png"> <img src="assets/melchiah3.png">  <img src="assets/melchiah4.png"> <img src="assets/melchiah5.png"> <img src="assets/melchiah6.png">  <img src="assets/melchiah7.png"> <img src="assets/melchiah8.png"> <img src="assets/melchiah9.png">  <img src="assets/melchiah10.png"> <img src="assets/melchiah11.png">
-
+                </div>
+                <div id="kainboss">
                 <li><b>Kain</b></li>
                 <p>Cuando empieze el duelo, Kain se teletransportara en tres puntos, estos son basados en tu ubicacion, mientras estes en la derecha de los pilares, Kain se teletransportara a la izquierda de estos y viceversa. Y si te paras en medio de la arena, se teletransportara cerca de la entrada. Ten seguro de darle un buen puño mientras corres hacia el con el boton de Accion. Repite hasta que empieze otra escena.</p>
-
+                    
                  <img src="assets/kain1.png"> <img src="assets/kain2.png"> <img src="assets/kain3.png">  <img src="assets/kain4.png"> <img src="assets/kain5.png"> <img src="assets/kain6.png">
-                
+                </div>
+                 <div id="zephonboss">
                 <li><b>Zephon</b></li>
                 <p>Empezando la pelea, una vez que Zephon trate de clavarte con sus patas, se atascara en el piso, dandote una oportunidad de que lo golpees. Entonces, criara un huevo de su agujero, el cual tendras que agarrar con el boton de Accion y traerlo hacia la entrada. Habra un lanzallamas en el cual prenderas el huevo y manteniendo el boton de la Camara, lo lanzaras hacia Zephon. Repite hasta que muera el jefe.</p>
                 
                  <img src="assets/zephon1.png"> <img src="assets/zephon2.png"> <img src="assets/zephon3.png">  <img src="assets/zephon4.png"> <img src="assets/zephon5.png"> <img src="assets/zephon6.png">
-
-                <li><b>Rahab</b></li>
+                    </div>
+                <div id="rahabboss">
+                 <li><b>Rahab</b></li>
                 <p>Ya comenzada la pelea, manten el boton de Camara y el boton de Disparar juntos para que puedas apuntar hacia las ventanas de mosaicos, suelta el boton de Disparar una vez apuntado a este. Repite hasta que se destruyan todas las ventanas de mosaicos.</p>
                
                  <img src="assets/rahab1.png"> <img src="assets/rahab2.png"> <img src="assets/rahab3.png">  <img src="assets/rahab4.png"> <img src="assets/rahab5.png"> <img src="assets/rahab6.png">
 
-
-                <li><b>Dumah</b></li>
+                    </div>
+                <div id="dumahboss">
+                 <li><b>Dumah</b></li>
                 <p>Dumah te empezara a seguir, tienes que guiarlo hacia la habitacion de el Incinerador Gigante del area. Asegurate de prender el gas y que Dumah te siga cerca. Tira de la palanca y una escena comenzara.</p>
                 
                 <img src="assets/dumah1.png"> <img src="assets/dumah2.png"> <img src="assets/dumah3.png">  <img src="assets/dumah4.png"> <img src="assets/dumah5.png"> <img src="assets/dumah6.png">
-
+                    </div>
+                <div id="kainboss2">
                 <li><b>Kain Parte 2</b></li>
                 <p>Este sigue una estructura parecida a tu primera pelea contra Kain, pero este tiene tres pisos. Cada vez que le pegues, subira un piso, aumentando sua area de teletransportacion. Puedes pararte cerca de una pared para controlar la mitad de donde se teletransporte, dandote una pequeña ventaja.</p>
             
                 <img src="assets/kainb1.png"> <img src="assets/kainb2.png"> <img src="assets/kainb3.png">  <img src="assets/kainb4.png"> <img src="assets/kainb5.png"> 
-            
+                    </div>
             
             </ol>
 
@@ -296,23 +318,27 @@
                 Contacto
             </h2>
             
-            <form action="">
-                <label >Nombre:</label><br>
-                <input type="text" required> <br><br>
+                <label>Nombre:</label><br>
+                <input id="nombreinput" type="text" placeholder="Escriba su nombre...">
+
+                
+                <p id="error">error</p>
+                <br><br>
                 
                 <label>Email:</label><br>
-                <input type="email" required> <br><br>
+                <input id="contactos" type="email" placeholder="escriba su email..."> <br>
+
+                <p id="error2">error2</p><br>
                 
                 <label>Mensaje:</label><br>
-                <textarea name="mensaje" rows="6" cols="20" placeholder="Escriba su mensaje...">
+                <textarea id="mensajes" name="mensaje" rows="10" cols="20" placeholder="Escriba su mensaje..."></textarea><br>
+                <p id="error3">error3</p>
+                <br>
 
-                </textarea><br>
+                <button id="btnV">Validar</button>
                 
-                <input type="submit" value="Enviar">
-                <input type="reset" value="Limpiar">
-
-
-            </form>
+                <!-- <input id="enviado" type="submit" value="Enviar">
+                <input type="reset" value="Limpiar"> -->
         </section>
              
         </main>

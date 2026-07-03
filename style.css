@@ -59,6 +59,7 @@ body{
 }
 body section{
      border: 10px black solid;
+     
 }
 
 header{
@@ -91,23 +92,21 @@ nav{
      border: black solid 5px;
      font-size: 50px;
    
-     background-color:cadetblue;
+     background-color:black;
      display: flex;
      flex-direction:row;
      align-items: stretch;
      justify-content: space-evenly;
      position: relative;
+    
+
 
 }
 
-nav img{
 
-     
-     width: 100%;
-     height: 210%;
-}
 nav a{
 text-decoration: none;
+
    
 
 }
@@ -118,8 +117,8 @@ nav p{
      font-size: 50%;
      white-space: nowrap;
      position: absolute;
-     padding-top: 30px;
-     padding:40px;
+   
+    
      font-weight: 900;
      transition: transform ease-in-out 2s;
 }
@@ -132,10 +131,14 @@ nav p:hover{
 
 nav div{
      height: 100px;
-     width: 100%;
+     width: 200px;
      border: black solid 5px;
      order: 1;
      overflow: hidden;
+     background-color: black;
+     
+       
+     
      
      
      transition: transform 0.5s;
@@ -164,6 +167,9 @@ nav div:hover{
      transform: scale(1.3);
 }
 
+.contenedor section{
+     
+}
 
 
 
@@ -231,7 +237,7 @@ nav div:hover{
      grid-template-columns:1fr 1fr;
 
      border: solid black 10px;
-     font-size: 20px;
+     font-size: 15px;
      font-family: Caudex,serif;
     
 }
@@ -240,9 +246,11 @@ nav div:hover{
 .intro1{
      grid-area: intro1;
      font-family: Caudex, serif;
-   
+     text-align:align-content;
      margin-left: 20px;
-     font-size: 40px;
+     font-size: 20px;
+     margin-left:20px;
+     margin-right:20px;
 }
 
 .intro2{
@@ -276,16 +284,19 @@ nav div:hover{
 
 
 .lista ol{
-
+    
      font-size: 30px;
+     margin: 0;
+    
 
-     display: flex;
+     /* display: flex;
      flex-direction: row;
      gap: 30px;
-     list-style: none;
-     flex-wrap: wrap;
+    
+     flex-wrap: wrap; */
 
-     
+      list-style: none;
+     margin:auto;
     
      
 }
@@ -294,48 +305,54 @@ nav div:hover{
 .lista div{
      margin: 20px;
      padding: 20px;
+    
      /* filter: blur(2px); */
      background-position: center;
      background-size: 130%;
      transition:filter 0.3s ease-in, transform 0.3s ease-in-out;
-     height: 200px;
-     width: 300px;
-     text-align: right;
+     height: 400px;
+     width: 500px;
+     margin-left:auto;
+     margin-right:auto;
      
 
 }
 
 .lista div:hover{
      filter: blur(0px);
-     transform: scale(1.5);
+     transform: scale(1.08);
 }
 
+.lista li div{
+     display: none;
+}
 
-
-.raziel{
+#raziel{
      background-image: url(assets/razil.png);
 }
-.kain{
+#kain{
      background-image: url(assets/kain.webp);
 }
-.zephon{
+#zephon{
      background-image: url(assets/zephon.webp);
 }
-.moebius{
+#moebius{
      background-image: url(assets/moebius.webp);
 }
-.rahab{
+#rahab{
      background-image: url(assets/rahab.jpg);
 }
-.dumah{
+#dumah{
      background-image: url(assets/dumah.webp);
 }
-.turel{
+#turel{
      background-image: url(assets/turel.webp);
 }
-.melchiah{
+#melchiah{
      background-image: url(assets/melchia.webp);
 }
+
+
 
 
 
@@ -377,6 +394,23 @@ nav div:hover{
 }
 
 
+button{
+     margin-left:auto;
+     margin-right:auto;
+     width: 50%;
+     height: 50px;
+      background-color: #063d31;
+     color: var(--espectral);
+     font-size:30px;
+     font-family: Caudex,serif;
+     border:black solid;
+}
+#habilidadesbtn{
+     margin:100px;
+}
+
+
+
 
 #jefes{
      background-color:var(--backespectral);
@@ -405,6 +439,10 @@ nav div:hover{
      height: 280px;
      border: 10px solid black;
 }
+
+/* .sectionjefesdiv div{
+     display:none;
+} */
 
 
 
