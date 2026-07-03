@@ -21,7 +21,7 @@ const foto1 = document.getElementById("foto1")
 // })
 
 const personajes = [document.getElementById("raziel"),document.getElementById("kain"),document.getElementById("melchiah"),document.getElementById("zephon"),document.getElementById("rahab"),document.getElementById("dumah"),document.getElementById("moebius"),document.getElementById("turel")]
-const nombrebtn = ["RAZIEL","KAIN","MELCHIAH","ZEPHON","RAHAB","DUMAH","MOEBIUS","TUREL"]
+const nombrebtn = ["1- RAZIEL","2- KAIN","3- MELCHIAH","4-ZEPHON","5- RAHAB","6- DUMAH","7- MOEBIUS","8- TUREL"]
 let index2=0
 personajes[index2].style.display = "block";
 pjbtn.innerHTML = nombrebtn[index2];
