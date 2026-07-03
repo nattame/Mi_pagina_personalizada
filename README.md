@@ -18,6 +18,8 @@ Esta pagina se trata de una guia simple a traves de el videojuego Legacy of Kain
 
 ## Link al repositorio
 
+https://github.com/nattame/Mi_pagina_personalizada.git
+
 
 ## Autor
 
